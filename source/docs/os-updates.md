@@ -11,7 +11,7 @@ available for rollback.
 
 ## Upgrading a Machine with rpm-ostree
 
-Simply invoke `rpm-ostree upgrade`.  It checks the repository URL
+Simply invoke `atomic upgrade`.  It checks the repository URL
 specified in `/ostree/repo/config` to check for an updated version.
 
 If a new version is found, it will first be downloaded, then deployed.
@@ -29,5 +29,5 @@ as a bootloader entry; hold down SHIFT during OS bootup to cause
 the bootloader to prompt.
 
 If you boot into the new tree and determine something is wrong,
-you can invoke `rpm-ostree rollback`.
+you can invoke `atomic rollback`.
 
